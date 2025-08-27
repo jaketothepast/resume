@@ -1,0 +1,257 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Jacob Windle}
+
+\basicInfo{
+  \email{jacob.windle@hey.com} \textperiodcentered\ 
+  \phone{703-419-0679} \textperiodcentered\ 
+  \linkedin[windlejacob12]{https://www.linkedin.com/in/windlejacob12}}
+
+\section{\faCogs\ Summary}
+
+Full-stack technical leader with 10+ years building production systems from embedded devices to cloud-scale AI applications. Currently driving LLM innovation at Instructure while serving as part-time CTO at Hemispheres Neuro, with prior experience optimizing systems at Amazon. Proven ability to deliver end-to-end solutions independently or while leading distributed teams, with expertise spanning low-level systems (C/C++), modern web applications (Python, JavaScript, Go), AI/ML (LLMs, RAG, embeddings), and cloud infrastructure (AWS, Terraform). Track record of securing funding through technical excellence and delivering measurable business impact: millions of hours saved through automation, \$300k+ cost reductions, and 200x performance improvements. Entrepreneurial mindset with hands-on engineering expertise across the entire stack.
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{AI/ML:} LLMs (GPT, Claude, Bedrock), RAG, Embeddings, Fine-tuning, spaCy, scikit-learn, Neural Machine Translation
+  \item \textbf{Languages:} Python, Java, C++, C, C\#, JavaScript, Go, Ruby, Clojure, Julia, Dart
+  \item \textbf{Web \& Frameworks:} Django, React, Spring Boot, .NET/Blazor, Flask, Ruby on Rails, Express, Flutter
+  \item \textbf{Infrastructure:} AWS (ECS, Lambda, S3, RDS, DynamoDB), Terraform, Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins)
+  \item \textbf{Databases \& Tools:} PostgreSQL, MongoDB, Redis, Airflow, Ansible, Git, Linux
+\end{itemize}
+
+\section{\faUsers\ Experience}
+
+
+\datedsubsection{\textbf{Instructure} Remote, Tennessee}{November 2023 -- Present}
+\role{Senior Software Engineer}
+
+\begin{itemize}
+    \item Co-author of Ignite Agent, AI application featured in Forbes and AWS blogs that saves millions of hours for educators by automating Canvas workflows through natural language. Built with Spring Boot, AWS Bedrock, and SageMaker.
+    \item Developed RAG-based tool selection system for Ignite Agent, implementing ToolRAG pattern to improve accuracy by dynamically selecting relevant tools from 10+ available integrations.
+    \item Developed LLM-powered internationalization software, saving the company over \$300k on translation costs while expanding Canvas to 200+ languages.
+    \item Fine-tuned m2m\_100 model for low-resource language translations, expanding educational access to marginalized communities globally.
+    \item Built DynamoDB-backed data models and architected generalized tool-calling flow for production AI agent serving thousands of educational institutions.
+    \item Public speaker and AI advocate, driving adoption through conference presentations and stakeholder engagement across internal and external audiences.
+\end{itemize}
+
+
+% To be denoted.
+\datedsubsection{\textbf{Amazon} Remote, Tennessee}{September 2022 -- November 2023}
+\role{Software Development Engineer II}
+
+\begin{itemize}
+    % \item New endpoint to serve images in C++ web service, used to implement multi-tenancy with very low latency for thousands of internal teams within Amazon. Ensured a zero-trust setup amongst internal teams.
+    \item Developed low-latency endpoint in C++, allowing customers to render customer-owned assets.
+    % \item Java package to evaluate duplicate uploads. Keeps uploaded image if new upload is of higher quality than existing image. Higher quality images stored within Amazon lead to millions of dollars in gained revenue across the organization.
+    \item Designed and implemented feature in Java service for customers to fix image defects by re-uploading assets, allowing customers to fix defects without any code changes on their side.
+    \item Developed feature in C++ rendering service where customers can set release dates for assets, improving data privacy for existing customers while improving customer experience by allowing uploads.
+    \item Created CI/CD pipelines with AWS CDK for internal tooling, automating previously manual deployments decreasing deployment errors and increasing developer velocity.
+    \item Building consensus across teams and collaborating on bigger features.
+
+\end{itemize}
+
+\datedsubsection{\textbf{Hemispheres Neuro, LLC} Johnson City, Tennessee}{July 2021 -- Present}
+\role{Chief Technology Officer - Part-Time}
+
+Working with Ph.D. Neuroscientists and licensed Clinical Psychologists to create cutting edge mental-health evaluation software. Solely responsible for the product roadmap and architecture. Delivering end-to-end software solutions that solve customer needs.
+
+\begin{itemize}
+    % \item Wrote Tobii Eyetracker cross-platform hardware service in C\#/.NET, instrumenting eyetracker and minimizing surface area to be installed on client machines.
+    % \item Developed end-to-end architecture for next generation of HN products.
+    % \item Created product roadmap and 5 year plan for business.
+    \item Created data analysis web application with React, replacing legacy native employee app and giving greater flexibility in presentation of data.
+    \item Developed native service with C\# and .NET to interface with eye-tracking hardware.
+    % \item Re-wrote native Windows-only admin application in React, saving employees from having to upgrade and manage native app versions.
+    % \item Added new features to legacy native Python 2 application allowing clinical researchers to have stronger data and more effectively design experiments.
+    \item Developed progressive web application in C\#, .NET and Blazor to replace native customer application, reducing customer install issues by removing the install path for the most ephemeral component.
+    \item Reduced the install size of the application by 300\%, saving space on client computers and leaving less of a footprint.
+    \item Developed a Windows installer for the application, bundling the eyetracker runtime and drivers, saving customers the headache of having to install drivers separately.
+    \item Designed layered architecture for customer application, where UI is interchangeable allowing easy expansion of product line.
+    \item Performing data analysis in Julia, helping to analyze customer data and developing algorithms to use in production software.
+    \item Rewrote legacy Python 2 backend in Clojure with Ring, Reitit and Compojure. With re-write we have achieved over 200x speedup of data processing, with a fraction of the computing power needed.
+    \item Built infrastructure automation to spin up application servers on shared VPS hosting using Ansible and Bash. Automated setup of Nginx proxy, SSL cert installation with Certbot, and jar build/deployment.
+    % \item Designed and developed new PWA in C\#/.NET with Blazor,
+    % running in WASM on client to replace formerly native client
+    % application. Removes any customer headaches that come with the
+    % installation. Includes installer for the one native piece.
+\end{itemize}
+
+
+\datedsubsection{\textbf{Picnic Score, Inc.} Remote, Maryland}{February 2020 -- September 2022}
+\role{Staff Software Engineer}
+
+% Active in architecture design, product planning,
+% mentoring of junior engineers, and development. laid out comprehensive plans to ship
+% software on-time, and participating actively in the development of the software while leading the team
+\begin{itemize}
+    \item Developed new architecture for core product, saving 80\% on AWS spend.
+    \item Created suite of Julia web services, to host machine learning models and compute relevant risk scores for clients.
+    \item Wrote precompilation scripts and operated Julia service in production.
+    % \item Saved company 80\% on AWS spend by re-architecting Elastic Beanstalk service to use Elastic Container Service. Used Terraform, Bitbucket Pipelines, and Elastic Container Registry to create turnkey environments on Elastic Container Service.
+    \item Developed full-stack web application in Go, used to showcase the product while generating leads.
+    \item Wrote Github Actions to increase developer velocity.
+    % \item Trained and deployed spaCy entity recognition models, providing customers with key insights about documents they have on the web that expose their information.
+    \item Trained and deployed spaCy entity recognition models, to help find customer-owned entities within customer documents.
+    % \item Architected a single container image for web scraping with Node.JS, Python, and an embedded headful Chrome browser, deployed to Cloud Run in GCP saving the company money.
+    \item Designed serverless architecture for web scraping software using Node.js, Chrome, Puppeteer, Supervisord and Docker.
+    \item Led team of junior engineers, planning web scraping project and ensuring project delivery end-to-end.
+    \item Managed the entire company's infrastructure using Terraform, increasing developer velocity by automating infrastructure creation, and allowing developers to learn about infrastructure by contributing to the codebase.
+    \item Made company infrastructure SOC2-compliant by working with auditors, Vanta scanners, and existing infrastructure as code.
+    % \item Developed MongoDB queries and aggregations to back Golang API endpoints.
+\end{itemize}
+
+\datedsubsection{\textbf{Kickback Rewards Systems} Remote, Idaho}{March 2019 -- August 2020}
+\role{Senior Software Engineer}
+
+ Contributing to all areas of the organization, with active roles in embedded systems development, full-stack web development, project architecture, distributed systems development, ETL, and prototype development. Delivering systems that scale and provide value to the organization.
+\begin{itemize}
+  \item Developed heartbeat protocol for embedded C application, reducing worst-case issue discovery time from 24 hours to 5 minutes.
+  \item Developed dashboard with React and Django Rest Framework to display status of all client sites, allowing customer success staff to see status of all customers rather than wait for daily email.
+  \item Led development of new reporting product with Python and Airflow, creating a new product and revenue stream for the company.  
+\end{itemize}
+
+\datedsubsection{\textbf{Verodin, Inc.} Tyson's Corner, Virginia}{March 2017 -- March 2019}
+\role{Software Engineer}
+ 
+\begin{itemize}
+  \item Developed license server for software with Python/Flask, allowing client installs to be licensed.
+  \item Developed patch server for software with Python/Flask, allowing clients to opt into automatic upgrades.
+  \item Automated manual builds with Github Actions, cutting build errors by 50\%.
+  \item Migrated frontend code to React from embedded Ruby, increasing testability and reducing bugs application.
+\end{itemize}
+
+\datedsubsection{\textbf{Integral Ad Science, Inc.} Chantilly, Virginia}{March 2015 -- March 2017}
+\role{Software Engineer}
+
+\begin{itemize}
+    \item Developed model using scikit-learn and pandas to classify ad placements on web page, achieving 83\% accuracy in production.
+    \item Created Django app for labeling ad placements training data, used by in-house analysts and testers.
+    \item Introduced CI/CD to team by writing Jenkins pipelines, increasing developer velocity
+\end{itemize}
+% \begin{itemize}
+%     \item Designed machine learning experiments and deployed a classifier still used today for internet advertisements.
+%     \item Developed a full-stack web application for continuously labeling classifier results, improving upon the previously manual process that involved a legacy desktop application.
+%     \item Developed the team's first CI/CD pipelines, increasing velocity of team.
+%     \item Retroactively implemented unit tests for legacy code, increasing coverage of application and reducing bugs found.
+
+% \end{itemize}
+
+\datedsubsection{\textbf{Veenome, Inc.} Fairfax, Virginia}{October 2014 -- March 2015}
+\role{Junior Developer}
+
+% \begin{itemize}
+    % \item Integrated Amazon Mechanical Turk with Django application to reduce cost of labeling training data.
+    % \item Converted Python web crawler from depth-first search to breadth-first search, increasing amount of relevant data from each crawl.
+% \end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+% \section{\faPencil\ Contract Work}
+
+% \datedsubsection{\textbf{Fytfeed LLC} Johnson City, Tennessee}{June 2022 -- Present}
+
+% Various projects and aspects of software development, working on a Flutter application.
+
+% \begin{itemize}
+%     \item Developed backend using Firebase Functions and Express, offloading compute intensive tasks that were
+%     originally running on-device saving users battery power and processing capabilities.
+%     \item Developed integrations with major wearable fitness trackers, developing new screens,
+%     integrating with external APIs, querying Apple HealthKit, and handling webhook events. Users now have posts automatically created on their feed when activities are detected.
+%     \item Refactoring code generated from a low-code tool to increase readability, and maintainability of the
+%     codebase for future developers.
+%     \item Mentoring Fytfeed junior developers and interns, helping them to grow and be able to take over
+%     development.
+% \end{itemize}
+
+% \datedsubsection{\textbf{Zaronology, Inc.} Johnson City, Tennessee}{July 2019 -- December 2019}
+
+% \begin{itemize}
+%     \item Designed, developed, and deployed a Learning Management System in React for client, adding a new product to client's portfolio.
+%     \item Fixing a non-functioning React site for a client, saving the client thousands of dollars by finishing the project under budget and allowing the client to not miss the promised release date.
+% \end{itemize}
+
+\section{\faBriefcase \ Startups/Projects/Contract Work}
+
+\begin{itemize}
+    % \item Perview: Restaurant Employee Relationship Management
+    % \begin{itemize}
+    %     \item Built MVP in Flutter, and Firebase
+    %     \item Worked with local restaurant owners to deploy and test. 
+    %     \item Gathered feedback from users. 
+    %     \item Developed branding and logo.
+    %     \item Managed app deployment and infrastructure.
+    % \end{itemize}
+    % \item Cirkles: Proximity-based social networking.
+    % \begin{itemize}
+    %     \item Built MVP in Flutter, Firebase, and with Foursquare SDK.
+    %     \item Tested locally with focus groups.
+    % \end{itemize}
+    \item MAIA - AI-Powered Justice-to-Employment Platform (Project Lead \& Original Author)
+    \begin{itemize}
+        \item Designed and developed original Django application from scratch, enabling client to secure \$500k in funding and expand development team.
+        \item Leading team of contracted engineers to scale platform that matches justice-involved individuals with employment opportunities using AI.
+        \item Architected and implemented embeddings-based semantic search system for intelligent job matching, improving candidate-job relevance.
+        \item Developed proprietary matching algorithm combining prompt engineering with custom scoring metrics to optimize placement success rates.
+        \item Built end-to-end AWS infrastructure using Terraform: ECS for containerized deployments, RDS for data persistence, S3 for object storage, AWS Secrets Manager for secure credential management.
+        \item Implemented secure network architecture with properly configured VPCs, private subnets, and public-facing ALB endpoints.
+        \item Established CI/CD pipelines and development best practices for distributed team collaboration.
+    \end{itemize}
+    \item Fytfeed
+    \begin{itemize}
+        \item Developed integration with popular fitness trackers in Flutter application, users activity is automatically synced with their social feed.
+        \item Built and architected backend system using Firebase, Firebase Functions, and Typescript to handle compute-intensive tasks.
+        \item Solved several efficiency issues, improving the user experience of the application.
+    \end{itemize}
+    \item LLM Social Bot: https://github.com/jaketothepast/llm-social-bot
+    \begin{itemize}
+        \item Built service in Clojure that runs on computer, receives Git patch files, formats and sends tweets on my behalf
+    \end{itemize}
+    % \item Chorefeed: https://github.com/jaketothepast/chorefeed
+    % \begin{itemize}
+    %     \item Built using Ruby on Rails.
+    %     \item Tested and ran in my own home, helping to manage daily workloads.
+    % \end{itemize}
+    % \item Vertex: TriDev Community Discord Bot
+    % \begin{itemize}
+    %     \item Built in Rust
+    % \end{itemize}
+\end{itemize}
+
+
+\section{\faGraduationCap\ Education}
+
+\datedsubsection{\textbf{George Mason University}, Fairfax, Virginia}{2012 -- 2018}
+\role{Bachelor of Science, Computer Science}
+
+% \section{\faHeart\ Volunteer Experience}
+% \datedsubsection{\textbf{First Appalachian Robotics} Bristol, TN}{May 2019 -- February 2020}
+% \role{Coding Coach}
+
+% Working with local robotics team to teach team members how to code in Java and develop efficient robot control software utilizing modern robot control architectures and artificial intelligence techniques. Doing outreach within the local community with coding camps for kids.
+
+
+
+
+% \section{\faInfo\ Links}
+% \begin{itemize}[parsep=0.5ex]
+%   \item Blog: https://jake-windle.gitlab.io
+%   \item Git: https://git.jakewindle.com
+% \end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
